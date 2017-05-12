@@ -151,8 +151,10 @@ Creating View Holder for every adapter and create adapter everywhere just to sup
 
 Using the DefaultAdapter. For the moment only recycler view is supported. Why use ListView while recycler view are more optimised?
 
+```java
 GSysDefaultAdapter<TaskModel> adapter = new GSysDefaultAdapter<>(TaskModel.LIST_HANDLER, TaskModel.getInflater());
 adapter_add(TaskModel.class, adapter); // Adapter will then automatically disposed upon on destroy
+```
 
 So 2 things is provided to the Adapter, the ListHandler and the ModelItemInflater
 
